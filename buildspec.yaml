@@ -4,7 +4,7 @@ phases:
   install:
     runtime-versions:
       java: openjdk8
-  pre-build:
+  pre_build:
     commands:
     - echo "Entered the pre-build phase"
   build:
@@ -12,7 +12,7 @@ phases:
     - echo "Entered the build phase"
     - mvn clean prepare-packer war:exploded
     
-  post-build:
+  post_build:
     commands:  
     - echo "Entered the post-build phase"
     - mv target/deploy ./
