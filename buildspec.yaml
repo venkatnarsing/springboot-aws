@@ -1,5 +1,9 @@
 version: 2.0
 phases:
+
+  install:
+    runtime-versions:
+    java: openjdk8
   pre-build:
     commands:
     - echo "Entered the pre-build phase"
